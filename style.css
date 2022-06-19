@@ -1,0 +1,154 @@
+body {
+    padding: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input,
+textarea {
+    -webkit-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.cX {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
+}
+
+.cY {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.cXY {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#popup {
+    display: none;
+    background-color: rgba(212, 212, 212, 0.459);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#popupc {
+    position: fixed;
+    width: min(762px, 95%);
+    padding: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(249, 249, 249);
+}
+
+#xmark {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.form-group label {
+    margin-bottom: 3px;
+}
+
+.fgch {
+    margin-bottom: 10px;
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+textarea {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#urlForm {
+    width: 90%;
+    height: 225px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(41, 41, 41);
+    }
+
+    h1,
+    span,
+    p {
+        color: white;
+    }
+
+    input,
+    textarea {
+        background-color: rgb(82, 82, 82) !important;
+        color: white !important;
+        border: 1px solid #151616 !important;
+    }
+
+    ::-webkit-input-placeholder {
+        color: lightgray;
+    }
+
+    ::-moz-placeholder {
+        color: lightgray;
+    }
+
+    :-ms-input-placeholder {
+        color: lightgray;
+    }
+
+    ::-ms-input-placeholder {
+        color: lightgray;
+    }
+
+    ::placeholder,
+    label {
+        color: lightgray;
+    }
+
+    :-ms-input-placeholder {
+        color: lightgray;
+    }
+
+    ::-ms-input-placeholder {
+        color: lightgray;
+    }
+
+    #popupc {
+        background-color: rgb(46, 46, 46);
+    }
+
+    #popupc label {
+        color: white;
+    }
+
+    #xmark {
+        fill: white;
+    }
+
+    #popup {
+        background-color: rgba(0, 0, 0, 0.459);
+    }
+}

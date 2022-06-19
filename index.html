@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="redirect.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | UrlOpen</title>
+    <link rel="shortcut icon" href="favicon-light.png" type="image/x-icon" id="favicon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="urlForm" class="needs-validation cXY mx-auto" novalidate>
+        <h1 class="text-center m-3">UrlOpen</h1>
+        <div class="form-floating">
+            <input type="url" class="form-control" id="floatingUrl" placeholder="Enter a URL here..." required
+                autocomplete="off" autocapitalize="off" spellcheck="false">
+            <label for="floatingUrl">Enter a URL here...</label>
+            <div class="invalid-feedback">
+                Enter a valid URL!
+            </div>
+        </div>
+        <div class="cX">
+            <button class="btn btn-primary m-4" type="submit">Get UrlOpen link</button>
+        </div>
+    </form>
+    <div id="popup">
+        <div class="cXY" id="popupc">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" id="xmark">
+                <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                    d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" />
+            </svg>
+            <div class="form-group">
+                <div class="fgch">
+                    <label for="urlOg">Original URL</label>
+                    <textarea class="form-control" id="urlOg" readonly></textarea>
+                </div>
+                <div class="fgch">
+                    <label for="urlResult"><strong>UrlOpen link</strong></label>
+                    <textarea class="form-control" id="urlResult" readonly></textarea>
+                </div>
+                <button id="copy" class="btn btn-primary" style="margin-top: 7.5px; padding-bottom: 8px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 20px; fill: white;">
+                        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M384 96L384 0h-112c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48H464c26.51 0 48-21.49 48-48V128h-95.1C398.4 128 384 113.6 384 96zM416 0v96h96L416 0zM192 352V128h-144c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h192c26.51 0 48-21.49 48-48L288 416h-32C220.7 416 192 387.3 192 352z" />
+                    </svg><span style="margin-left: 5px;">Copy to Clipboard</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
